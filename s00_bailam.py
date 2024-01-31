@@ -27,15 +27,20 @@ tongtienmuahang(1000000)                | 1100000
 tongtienmuahang(gia_truoc_thue=1000000) | 1100000
 tongtienmuahang(None)                   | None
 """
+
 #endregion debai
+
 
 #region bailam
 def tongtienmuahang(gia_truoc_thue):
-  return 'todo nn'
+  if (gia_truoc_thue is None):
+    return None
+  else:
+    return (int)(gia_truoc_thue + gia_truoc_thue * 0.1)
 
 
-if __name__=='__main__':
-  print( tongtienmuahang(1000000) )
-  print( tongtienmuahang(gia_truoc_thue=1000000) )
-  print( tongtienmuahang(None) )
+if __name__ == '__main__':
+  print(tongtienmuahang(1000000))
+  print(tongtienmuahang(gia_truoc_thue=1000000))
+  print(tongtienmuahang(None))
 #endregion bailam
